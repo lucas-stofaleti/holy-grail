@@ -1,0 +1,11 @@
+html {
+  font-family: "Dosis", sans-serif;
+  font-size: 16px;
+  background-color: #1e4040;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
