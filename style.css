@@ -44,3 +44,31 @@ html {
   grid-area: main;
 }
 /* OUTER GRID END */
+
+/* INNER GRID */
+.inner-grid {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-areas:
+    "main-inner"
+    "side-inner"
+    "footer-inner";
+  grid-template-rows: auto auto 70px;
+}
+
+.inner-main {
+  background-color: rgba(255, 122, 0);
+  grid-area: main-inner;
+}
+
+.inner-aside {
+  background-color: rgba(255, 122, 0, 0.4);
+  grid-area: side-inner;
+}
+
+.inner-footer {
+  background-color: rgba(255, 122, 0, 0.7);
+  grid-area: footer-inner;
+}
+/* INNER GRID END */
