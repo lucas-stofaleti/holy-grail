@@ -109,6 +109,11 @@ a {
   flex-direction: column;
   align-items: center;
 }
+
+.fa-bars:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
 /* FLEX HEADER END */
 
 /* BREAKPOINT 1 */
@@ -138,9 +143,29 @@ a {
 /* BREAKPOINT 2 END */
 
 /* BREAKPOINT 3 */
-/* @media screen and (min-width: 1400px) {
-  .outer-grid {
-    grid-template-columns: 1fr 1fr;
+@media screen and (min-width: 1440px) {
+  .flex-header {
+    display: grid;
+    grid-template-columns: 1fr 950px 1fr;
+    grid-template-areas: "left . right";
   }
-} */
+
+  .flex-left {
+    grid-area: left;
+    justify-self: end;
+  }
+
+  .flex-right {
+    grid-area: right;
+    justify-self: start;
+  }
+
+  .outer-grid,
+  .outer-grid-expanded {
+    grid-template-areas:
+      "head head head"
+      "nav main main";
+    grid-template-columns: 1fr 950px 1fr;
+  }
+}
 /* BREAKPOINT 3 END */
