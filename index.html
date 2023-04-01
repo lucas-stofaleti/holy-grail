@@ -23,12 +23,24 @@
   <body>
     <div class="outer-grid outer-grid-expanded">
       <header class="outer-header flex-header">
-        <i
-          class="fa-solid fa-bars"
-          id="expand-image"
-          onclick="expandNavbar()"
-        ></i>
-        <h1>LOGO</h1>
+        <div class="flex-left">
+          <i
+            class="fa-solid fa-bars"
+            id="expand-image"
+            onclick="expandNavbar()"
+          ></i>
+          <h1 class="logo">LOGO</h1>
+        </div>
+        <div class="flex-right">
+          <div class="flex-video">
+            <i class="fa-brands fa-youtube"></i>
+            <a href="">Video</a>
+          </div>
+          <div class="flex-article">
+            <i class="fa-solid fa-paragraph"></i>
+            <a href="">Article</a>
+          </div>
+        </div>
       </header>
       <nav class="outer-nav"></nav>
       <main class="outer-main inner-grid">
