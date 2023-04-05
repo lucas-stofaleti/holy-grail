@@ -110,6 +110,9 @@ img {
 .inner-footer {
   background-color: #1e4040;
   grid-area: footer-inner;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 /* INNER GRID END */
 
